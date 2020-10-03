@@ -9,3 +9,6 @@ ISO-20765 methods use a standardized 21-component gas system in which all of the
 
 The SRK equation of state is implemented as part of the ISO 20765 routines (density solver) and is applied in order to obtain an initial approximation of the density roots (vapor phase). More specifically, SRK equation of state is used to narrow down the root search interval of the density solver for ISO20765 part II.
 For reference, SRK equation of state formulation, i.e. alpha function, mixing rules and binary interaction coefficients are those from the API Technical Data Book 6th edition.
+
+The present implementation applies to gas phase (single phase). 
+It is the user responsibility to verify the gas condition vs. envelope boundaries using an appropriate process simulator.
