@@ -1,7 +1,22 @@
      
 !ISO 20765 Part 2 - Coded by R.Djigouadi
 !www.n-centrix.com
-!Release Version Oct-2020     
+!Release Version Oct-2020 
+
+!References:
+!  The GERG-2008 equation of state was developed by Oliver Kunz and Wolfgang Wagner:
+!
+!  Kunz, O. and Wagner, W.
+!  The GERG-2008 Wide-Range Equation of State for Natural Gases and Other Mixtures:
+!  An Expansion of GERG-2004
+!  J. Chem. Eng. Data, 57(11):3032-3091, 2012.
+!
+!  Kunz, O., Klimeck, R., Wagner, W., and Jaeschke, M.
+!  The GERG-2004 Wide-Range Equation of State for Natural Gases and Other Mixtures
+!  GERG Technical Monograph 15
+!  Fortschr.-Ber. VDI, Reihe 6, Nr. 557, VDI Verlag, Düsseldorf, 2007.
+!  http://www.gerg.eu/public/uploads/files/publications/technical_monographs/tm15_04.pdf
+
      
        include 'SRK(EOS).f' 
        include 'GERG2008_Table.f'       !ISO20765 part II coefficient table
