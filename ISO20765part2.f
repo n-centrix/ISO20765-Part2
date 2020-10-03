@@ -1625,35 +1625,6 @@
 	  GOTO 4
 	  ENDIF	  
 
-!LIQUID ROOT  
-     
-!ADDED JULY 2020  	  
-	   GOTO 28
-!*************
-
-
-       IF (MTYPE.EQ.-1) THEN
-	   m=0
-	   SH=0D0
-8      SH=SH+0.02D0
-	   UPPER=1D0+SH
-	   LOWER=1D0-SH
-       m=m+1
-	   CALL RGFALSI(PRESS, TEMP, FDL(2), XI, DLL*LOWER, DLL*UPPER)
-
-	   IF (FDL(2).EQ.0D0.AND.m.LT.10) THEN
-	    GOTO 8
-	   ENDIF	   
-	   ENDIF
-  
-	  IF (FDL(2).LT.0D0) THEN
-	  FDL(2)=0D0
-	  ENDIF
-	  
-	  IF (AUTO.EQ.1) THEN
-	  DL= FDL(SW)
-	  ENDIF
-
  28	  IF (AUTO.EQ.0) THEN
 	  DL= FDL(1)
 	  ENDIF
