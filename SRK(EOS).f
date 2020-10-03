@@ -1,3 +1,6 @@
+ !Coded by R. Djigouadi
+ !www.n-centrix.com
+ !release Oct.2020
  
 	  SUBROUTINE SRK(PRESS, TEMP, CFI1, CFI2, XI) 
 !*******************************************************************************
